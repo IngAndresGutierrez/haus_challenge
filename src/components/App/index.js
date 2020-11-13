@@ -12,7 +12,10 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <MiniDrawer></MiniDrawer>
+
+      {/* Start component only demo after implementing */}
       <HorizontalScrollMenu />
+      {/* Finish component only demo after implementing */}
     </ThemeProvider>
   )
 }
