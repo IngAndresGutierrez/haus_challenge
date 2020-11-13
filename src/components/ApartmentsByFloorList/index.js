@@ -19,6 +19,7 @@ const ApartmentsByFloorList = () => {
               <Typography>Piso</Typography>
               <Typography>{apartmentsfloor.numFloor}</Typography>
             </div>
+
             {apartmentsfloor.apartments.map((item, index) => {
               return <OutlinedCard key={index} {...item} />
             })}

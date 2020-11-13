@@ -5,7 +5,12 @@ import { Card, CardContent, Typography } from '@material-ui/core'
 /* import internal modules */
 import useStyles from './styles'
 
-const OutlinedCard = ({ numApartment, state, type, area }) => {
+const OutlinedCard = ({
+  numApartment = '777',
+  state = 'DISPONIBLE',
+  type = 'A',
+  area = '333',
+}) => {
   const classes = useStyles()
 
   const changeTitleColor = () => {

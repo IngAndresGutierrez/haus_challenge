@@ -15,6 +15,14 @@ const useStyles = makeStyles((theme) => ({
     margin: 10,
     marginTop: 60,
   },
+  scroll: {
+    margin: ' 4px, 4px',
+    padding: '4px',
+    width: '300px',
+    overflowX: 'auto',
+    overflowY: 'hidden',
+    whiteSpace: 'nowrap',
+  },
 }))
 
 export default useStyles

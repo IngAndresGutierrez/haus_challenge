@@ -5,12 +5,14 @@ import { CssBaseline, ThemeProvider } from '@material-ui/core'
 import './styles.css'
 import theme from '../Theme'
 import MiniDrawer from '../Drawer'
+import HorizontalScrollMenu from '../HorizontalScrollMenu'
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <MiniDrawer></MiniDrawer>
+      <HorizontalScrollMenu />
     </ThemeProvider>
   )
 }
