@@ -1,6 +1,6 @@
 /* import external modules */
 import { Fragment } from 'react'
-import { Grid } from '@material-ui/core'
+import { Grid, Typography } from '@material-ui/core'
 
 /* import internal modules */
 import useStyles from './styles'
@@ -15,6 +15,10 @@ const ApartmentsByFloorList = () => {
       <Fragment key={apartmentsfloor.numFloor}>
         <Grid item xs={12} className={classes.floor}>
           <Grid container direction="row">
+            <div className={classes.numFloor}>
+              <Typography>Piso</Typography>
+              <Typography>{apartmentsfloor.numFloor}</Typography>
+            </div>
             {apartmentsfloor.apartments.map((item, index) => {
               return <OutlinedCard key={index} {...item} />
             })}

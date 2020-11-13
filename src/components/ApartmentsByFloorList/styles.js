@@ -10,6 +10,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
     background: '#f8f8f8',
   },
+  numFloor: {
+    textAlign: 'center',
+    margin: 10,
+    marginTop: 60,
+  },
 }))
 
 export default useStyles
